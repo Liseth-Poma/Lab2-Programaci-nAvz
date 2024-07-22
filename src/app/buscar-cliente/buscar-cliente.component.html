@@ -1,0 +1,42 @@
+<div class="container mt-3">
+  <div class="row">
+      <div class="col-12">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingBusqueda" placeholder="1758199143"
+                  [(ngModel)]="cedula">
+              <label for="floatingBusqueda">Identificación</label>
+          </div>
+          <button class="btn btn-success mb-5"(click)="getUsuarioByCedula()">Buscar Usuario</button>
+
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="nombre">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Cédula</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="cedula">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Telefono</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="telefono">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Direccion</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="direccion">
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Correo</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="correo">
+          </div>
+      </div>
+  </div>
+  <br>
+  <div class="d-flex justify-content-center">
+          <button class="btn btn-primary mb-5" (click)="navigateToInicio()">Regresar al Inicio</button>
+        </div>
+</div>
